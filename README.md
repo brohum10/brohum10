@@ -14,6 +14,7 @@ I build dependable backend systems, data pipelines, search infrastructure, and a
 |---|---|---|
 | [Concurrent Web Crawler & Search Engine](https://github.com/brohum10/concurrent-web-crawler) | Java, Spring Boot, concurrent BFS crawling, URL safety, PostgreSQL, BM25 | 25,000-document / 1,000-query benchmark: **13.399 ms p95**, **1.000 Recall@10** |
 | [Semantic Search & Response Platform](https://github.com/brohum10/semantic-search-platform) | Python, Flask, FAISS, SQLite, hybrid ranking, source-backed responses | 100,000-message / 500-query benchmark: **5.196 ms p95**, **0.980 Recall@10**, **0.947 MRR** |
+| [Luma Journal](https://github.com/brohum10/LumaJournal) | SwiftUI, SwiftData, Foundation Models, Speech, EventKit | Privacy-first on-device AI extraction with review-before-write system integrations |
 | [Software Engineering Portfolio](https://github.com/brohum10/soham-portfolio) | React, Vite, responsive design, accessible navigation | Current experience, projects, and downloadable SWE résumé |
 | [ReliaQuest Java Challenge](https://github.com/brohum10/reliaquest-entry-level-java-challenge) | Java, Spring service design, API integration, validation | Runnable implementation with documented design decisions |
 
