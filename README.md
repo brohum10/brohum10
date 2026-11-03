@@ -1,55 +1,33 @@
 # Soham Jindal
 
-### Software engineer building reliable backend, distributed, and applied-ML systems
+**Computer Engineering at Purdue University · AI/ML minor · Expected May 2028**
+Interested in Summer 2027 software engineering internships across backend, infrastructure, and applied AI.
 
-Computer Engineering at Purdue University · AI/ML minor · Expected May 2028
+[Portfolio](https://brohum10.github.io/soham-portfolio/) · [LinkedIn](https://www.linkedin.com/in/sohamj2025) · [Email](mailto:soham.jindal16@gmail.com)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-111827?style=flat-square&logo=vercel&logoColor=white)](https://brohum10.github.io/soham-portfolio/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sohamj2025)
-[![Email](https://img.shields.io/badge/Email-Soham-334155?style=flat-square&logo=gmail&logoColor=white)](mailto:soham.jindal16@gmail.com)
+I build systems that are useful to run and interesting to inspect. I care about clear failure behavior, reproducible tests, and explaining what a result actually measures. The six pinned repositories are a good starting point:
 
-I like engineering work where correctness, observability, and performance all matter: local-first products, guardrailed AI systems, concurrent crawlers, consensus protocols, retrieval infrastructure, and privacy-conscious software. My repositories emphasize runnable examples, explicit trade-offs, automated tests, and results that another engineer can reproduce.
+## Featured projects
 
-## Start here
+| Project | What to look at |
+|:--|:--|
+| [Chronicle LSM Store](https://github.com/brohum10/chronicle-lsm-store) | A C++20 key-value engine with atomic write-ahead-log batches, skip lists, Bloom-filtered files, recovery, and compaction. The README includes sanitizer checks and a reproducible benchmark. |
+| [Converge](https://github.com/brohum10/converge-crdt-board) | A local-first TypeScript/React board with CRDT merge rules, offline edits, WebSocket sync, PostgreSQL replay, and convergence tests. |
+| [Concurrent Web Crawler](https://github.com/brohum10/concurrent-web-crawler) | A Java/Spring crawler and BM25 search API with bounded jobs, crawl-safety controls, PostgreSQL, metrics, and deterministic search tests. |
+| [LLM Incident Response Copilot](https://github.com/brohum10/llm-incident-response-copilot) | A cited runbook workflow with read-only tools, approval gates, and an offline evaluation harness. Demo mode uses a deterministic stand-in; the README separates that from live LLM behavior. |
+| [Mini Raft Store](https://github.com/brohum10/mini-raft-store) | A Python key-value store that exercises leader election, majority commits, durable logs, failover, and conflict repair under process-level tests. |
+| [Luma Journal](https://github.com/brohum10/LumaJournal) | A SwiftUI journal that keeps writing and AI analysis on-device, with review-before-write actions and a documented privacy boundary. |
 
-| Project | What it explores | Engineering evidence |
-|:--|:--|:--|
-| **[Chronicle LSM Store](https://github.com/brohum10/chronicle-lsm-store)** | C++20 embedded LSM engine with atomic WAL batches, skip lists, Bloom-filtered SSTables, positional I/O, k-way range scans, recovery, and compaction | 11 tests plus ASan/UBSan; **294,173 reads/s** and durable batches at **165,175 writes/s** (three-run medians) |
-| **[Converge Local-First Board](https://github.com/brohum10/converge-crdt-board)** | TypeScript/React collaborative board with CRDT conflict resolution, PostgreSQL cursor replay, bounded WebSockets, Prometheus telemetry, and offline queues | 31 tests including exact-clock tie regression coverage and 200-run convergence fuzzing; 100,000-operation benchmark at **2.229M operations/second median** |
-| **[LLM Incident Response Copilot](https://github.com/brohum10/llm-incident-response-copilot)** | Guardrailed RAG service that retrieves runbooks, gathers evidence through allowlisted read-only tools, validates cited plans, and flags mutating actions for approval | 24-case **offline demo** evaluation: **1.00 top-1 source hit rate**; **53 tests and 96% coverage** |
-| **[Concurrent Web Crawler & Search Engine](https://github.com/brohum10/concurrent-web-crawler)** | Java/Spring crawler with bounded asynchronous jobs, concurrent BFS, crawl-safety controls, BM25 search, PostgreSQL, and Prometheus metrics | 25,000-document synthetic benchmark: **17.239 ms p95** and **1.000 query Hit@10**; 20 deterministic tests |
-| **[Mini Raft Store](https://github.com/brohum10/mini-raft-store)** | Dependency-free distributed key-value store with leader election, majority commits, durable logs, failover, and conflict repair | Multi-process tests kill and restart leaders/followers while verifying committed data and catch-up |
-| **[Semantic Search & Response Platform](https://github.com/brohum10/semantic-search-platform)** | Local-first retrieval service using Flask, SQLite, FAISS, hybrid reranking, and source-backed extractive responses | 100,000-document synthetic benchmark: **16.940 ms p95**, **12,990 indexed docs/s**, and **96% measured coverage** |
-| **[Causal Trace Analyzer](https://github.com/brohum10/causal-trace-analyzer)** | Vector-clock analysis that reconstructs a causal DAG, finds concurrent race suspects, and calculates a latency-critical path | 33 tests at **94.83% branch coverage**; 400-event benchmark improved from about **725 ms to 130.339 ms median** |
-| **[Luma Journal](https://github.com/brohum10/LumaJournal)** | Privacy-first SwiftUI journal using Apple Foundation Models, on-device dictation, SwiftData, and review-before-write actions | No accounts, analytics, or network layer; protocol-backed services and deterministic mapping/date tests |
-| **[ScopeLedger](https://github.com/brohum10/scopeledger)** | Full-stack AI workflow for evidence-backed scope decisions, human-approved estimates, and verified change-order exports | **45 tests** across provenance, owner isolation, optimistic concurrency, audit replay, and provider failures; documented live-provider smoke test |
-| **[HarFlow Studio](https://github.com/brohum10/harflow-studio)** | Browser-only HAR analyzer with waterfalls, budgets, and before/after comparisons | **15 tests**; 10,000-entry synthetic analysis at **14.378 ms p95** on a local arm64/Node 24 run |
-| **[Software Engineering Portfolio](https://github.com/brohum10/soham-portfolio)** | Responsive React/Vite portfolio presenting experience, architecture-focused projects, and reproducible project results | Accessible navigation, responsive layouts, downloadable résumé, and GitHub Pages deployment |
+## More to explore
 
-> Performance figures above come from the deterministic benchmark commands and recorded results in each project. They describe local synthetic workloads, not production traffic.
-
-For role-specific browsing: [Semantic Search](https://github.com/brohum10/semantic-search-platform) and [Luma Journal](https://github.com/brohum10/LumaJournal) for applied AI/ML; [LLM Incident Response Copilot](https://github.com/brohum10/llm-incident-response-copilot) for LLM systems; [Chronicle](https://github.com/brohum10/chronicle-lsm-store) and [Concurrent Web Crawler](https://github.com/brohum10/concurrent-web-crawler) for backend/SWE; [ScopeLedger](https://github.com/brohum10/scopeledger) for full-stack; [HarFlow](https://github.com/brohum10/harflow-studio) for frontend; and [RelayForge](https://github.com/brohum10/relayforge-webhooks) for automation and reliable delivery.
+- **Applied ML:** [QueuePilot](https://github.com/brohum10/queuepilot) explores support-routing decisions and human review; [SelectiveML](https://github.com/brohum10/selective-ml) explores thresholds, calibration, and release gates.
+- **Data and reliability:** [Semantic Search Platform](https://github.com/brohum10/semantic-search-platform) combines dense and lexical retrieval; [ProofTrail](https://github.com/brohum10/prooftrail) builds a verifiable Merkle audit log.
+- **Full stack and frontend:** [ScopeLedger](https://github.com/brohum10/scopeledger) connects evidence-backed AI workflows to an approval UI; [HarFlow Studio](https://github.com/brohum10/harflow-studio) analyzes browser network captures locally.
 
 ## Experience
 
-- **ADT — Software Engineering Intern, AI & CX Systems:** Built Python/pandas and pytest workflows for 600+ AI-assisted interactions, surfaced 25+ defects, and reduced weekly triage from 5 hours to 90 minutes.
-- **L3Harris — Software Engineering Intern, ML Systems:** Processed 200,000+ NASA NOS3 telemetry records and improved labeled attack recall from 68% to 83% through feature engineering and error analysis.
-- **Alpha Net — Software Engineer Intern:** Shipped JavaScript/AWS workflows supporting 50,000+ monthly sessions and Swift/Kotlin REST features that reduced response time by 20%.
+- **ADT, Software Engineering Intern — AI & CX Systems:** Built Python/pandas and pytest workflows for AI-assisted interaction review and triage.
+- **L3Harris, Software Engineering Intern — ML Systems:** Worked with NASA NOS3 telemetry, feature engineering, and detection error analysis.
+- **Alpha Net, Software Engineer Intern:** Shipped JavaScript/AWS workflows and mobile REST features.
 
-## Engineering toolkit
-
-| | Technologies |
-|:--|:--|
-| **Languages** | Python · Java · C++ · C · JavaScript/TypeScript · SQL · Kotlin · Swift |
-| **Backend & data** | Spring Boot · FastAPI · Flask · Node.js · PostgreSQL · SQLite · FAISS |
-| **Systems & delivery** | Linux/Unix · Git · Docker · AWS · Google Cloud · pytest · JUnit · GitHub Actions |
-
-## How I work
-
-1. Start with behavior, invariants, and failure modes—not a framework.
-2. Keep core logic behind small interfaces so it can be tested without external infrastructure.
-3. Treat safety limits, useful errors, and operational visibility as product features.
-4. Measure results with deterministic workloads and document exactly what those numbers mean.
-5. Leave the next engineer a clear architecture, setup path, and honest list of trade-offs.
-
-I’m seeking **Summer 2027 software engineering internships** in backend, infrastructure, data, and ML-adjacent engineering.
+I use Python, Java, C++, TypeScript, SQL, and Swift across these projects. The repositories include setup steps and scope notes; benchmark figures in their READMEs describe local or synthetic workloads, not production traffic. I use AI assistance in development and document it where relevant.
