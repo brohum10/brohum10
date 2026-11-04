@@ -1,6 +1,7 @@
 # Soham Jindal
 
 **Purdue Computer Engineering · AI/ML minor · Expected May 2028**
+
 Seeking Summer 2027 software engineering internships in backend, infrastructure, and applied AI.
 
 [Portfolio](https://brohum10.github.io/soham-portfolio/) · [LinkedIn](https://www.linkedin.com/in/sohamj2025) · [Email](mailto:soham.jindal16@gmail.com)
